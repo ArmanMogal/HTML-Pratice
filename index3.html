@@ -1,0 +1,54 @@
+<!-- Create an HTML page, which should contain all types of input elements. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        body {
+            font-family: sans-serif
+        }
+
+        #inp,
+        #sel {
+            display: block
+        }
+
+        #cb {
+            margin-bottom: 20px
+        }
+
+        #sel {
+            display: none
+        }
+
+        #cb:checked~#inp {
+            display: none
+        }
+
+        #cb:checked~#sel {
+            display: block
+        }
+    </style>
+</head>
+<body>
+
+    <label for="cb">View as dropdown</label>
+    <input id="cb" type="checkbox">
+
+    <label id="inp">Car Model
+        <input type="text" name="carmodel">
+    </label>
+
+    <label id="sel">Car Model
+        <select name="carmodel">
+            <option value="mazda">Mazda</option>
+            <option value="ford">Ford</option>
+            <option value="audi">Audi</option>
+        </select>
+    </label>
+
+
+</body>
+
+</html>
